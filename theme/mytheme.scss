@@ -1,0 +1,176 @@
+/**
+ * Black theme for reveal.js. This is the opposite of the 'white' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+$themeColor: #78c957;
+
+// Default mixins and settings -----------------
+@import "./template/mixins";
+@import "./template/settings";
+// ---------------------------------------------
+
+// Include theme-specific fonts
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #444444;
+$mainColor: #FFFFFF;
+$headingColor: #FFFFFF;
+
+$mainFontSize: 28px;
+$mainFont: "Ubuntu", "Noto Sans TC", sans-serif;
+$headingFont: "Ubuntu", "Noto Sans TC", sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: none;
+$headingFontWeight: 700;
+$linkColor: #78c957;
+$linkColorHover: lighten($linkColor, 15%);
+$selectionBackgroundColor: lighten($linkColor, 25%);
+
+$heading1Size: 1.5em;
+$heading2Size: 1.3em;
+$heading3Size: 1em;
+$heading4Size: 0.8em;
+$headingLineHeight: 1.4;
+
+$letterSpacing: 0rem;
+
+body {
+  font-size: $mainFontSize;
+}
+
+.reveal {
+  letter-spacing: $letterSpacing;
+  font-weight: 700 !important;
+}
+
+.reveal img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+}
+
+.slides {
+  border-top: #eee 1px solid;
+  border-bottom: #eee 1px solid;
+}
+
+.reveal strong,
+.reveal b {
+  font-weight: 700 !important;
+  color: darken($themeColor, 20%);
+}
+
+.slides .present {
+  max-height: 1080px;
+  height: 700px;
+  text-align: left;
+}
+
+.slides .stack.present {
+  max-height: none;
+  height: auto;
+}
+
+.slides .present p {
+  line-height: 1.5;
+  padding: 3px 20px;
+  margin: 0;
+}
+.slides .present ul {
+  padding: 0px 20px;
+  line-height: 1.5;
+}
+
+.slides .present li {
+  padding: 0.2rem 0;
+}
+
+// Change text colors against light slide backgrounds
+@include light-bg-text-color(#444444);
+
+.slides .present h1.title {
+  letter-spacing: $letterSpacing;
+  margin-top: 20%;
+  border-bottom: 2px solid $themeColor;
+}
+.slides .present h2.subtitle {
+  letter-spacing: $letterSpacing;
+  border: none;
+  padding: 0px;
+}
+
+.title-name {
+  text-align: right;
+  position: absolute;
+  bottom: 100px;
+  right: 30px;
+  font-size: 0.8em;
+}
+
+.slides .present .section-title {
+  margin: 25% 10% !important;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid $themeColor;
+}
+.slides .present h2 {
+  letter-spacing: $letterSpacing;
+  border-bottom: 2px solid $themeColor;
+  padding: 20px 20px 0px 20px;
+}
+.slides .present h3 {
+  padding: 20px 20px 0px 20px;
+}
+
+.MathJax_Display {
+  margin: 0.3em !important;
+}
+
+.MathJax span {
+  font-size: 26px;
+}
+
+// Custom
+.footnote {
+  font-size: 16px;
+  position: absolute !important;
+  bottom: 8px;
+  font-weight: 400;
+}
+
+.reveal table {
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+@for $i from 5 through 30 {
+  .img#{$i * 5} {
+    max-width: 5% * $i !important;
+  }
+}
+
+.small {
+  font-size: 0.6em;
+}
+
+.reveal table th,
+.reveal table td {
+  text-align: right !important;
+}
+
+// Theme template ------------------------------
+@import "./template/theme";
+// ---------------------------------------------
+
+.reveal table th,
+.reveal table td,
+.reveal table tbody tr:last-child th,
+.reveal table tbody tr:last-child td {
+  border: 1px solid gray;
+}

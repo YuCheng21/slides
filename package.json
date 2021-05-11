@@ -1,0 +1,15 @@
+{
+  "name": "slides",
+  "version": "1.0.0",
+  "description": "A reveal-md slides project",
+  "scripts": {
+    "start": "reveal-md content/ -w",
+    "build": "rm -rf docs && reveal-md content/ --static docs --static-dirs=content/attachments && cp -r static/* docs",
+    "push": "git add . && git commit -m \"`date`\" && git push"
+  },
+  "author": "YuCheng",
+  "license": "ISC",
+  "dependencies": {
+    "reveal-md": "^5.1.0"
+  }
+}

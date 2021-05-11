@@ -1,0 +1,45 @@
+name: 自動部署 reveal-md
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [10.x]
+
+    steps:
+      - name: 開始運行
+        uses: actions/checkout@v1
+
+      - name: 設置 Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: 安裝依賴套件
+        run: |
+          npm install
+
+      - name: 緩存
+        uses: actions/cache@v1
+        id: cache-dependencies
+        with:
+          path: node_modules
+          key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
+
+      - name: 部署
+        run: |
+          npm run build
+          cd ./docs
+          git init
+          git config user.name "${{secrets.GIT_NAME}}"
+          git config user.email "${{secrets.GIT_EMAIL}}"
+          git checkout -b gh-pages
+          git add .
+          git commit -m "Deploy to Github-pages"
+          git push --force --quiet "https://${{secrets.GH_TOKEN}}@${{secrets.GH_REF}}" gh-pages:gh-pages
