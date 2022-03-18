@@ -1,9 +1,8 @@
 {
     "separator": "\n\n---\n\n",
     "verticalSeparator": "\n\n----\n\n",
-    "theme": "theme/mytheme.css",
+    "theme": "theme/all.css",
     "listingTemplate": "listing.html",
     "template": "reveal.html",
-    "assetsDir": "assets",
-    "renderPrivate": true
+    "assetsDir": "assets"
 }
