@@ -4,7 +4,7 @@
   "description": "A reveal-md slides project",
   "scripts": {
     "start": "reveal-md content/ -w",
-    "build": "rm -rf docs && reveal-md content/ --static docs --static-dirs=content/attachments && cp -r static/* docs",
+    "build": "rm -rf docs && reveal-md content/ --static docs --static-dirs=content/attachments && cp -r static/* docs && cp theme/listing.css docs/assets/theme/listing.css",
     "push": "git add . && git commit -m \"`date`\" && git push"
   },
   "author": "YuCheng",
