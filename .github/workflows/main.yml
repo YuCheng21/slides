@@ -23,7 +23,7 @@ jobs:
 
       - name: 安裝依賴套件
         run: |
-          npm install –production
+          npm install -–production
 
       - name: 緩存
         uses: actions/cache@v1
