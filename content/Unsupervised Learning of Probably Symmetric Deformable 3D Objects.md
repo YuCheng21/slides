@@ -8,8 +8,10 @@ revealOptions:
 ---
 # Unsupervised Learning of Probably Symmetric Deformable 3D Objects
 
-- Author: Shangzhe Wu, Christian Rupprecht, Andrea Vedaldi
-- Published in: 2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)
+<hr class="mb-8">
+
+- Author: Shangzhe Wu, Christian Rupprecht, Andrea Vedaldi  <!-- .element: class="text-3xl" -->
+- Published in: 2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) <!-- .element: class="text-3xl" -->
 
 ---
 
@@ -28,7 +30,7 @@ revealOptions:
 - 沒有事先的 2D 圖片標註或 3D 模型，消除了影像標註的瓶頸。
 - 用單視角的影像訓練，產生一個網路，該網路可以憑一張影像預測物件的 3D 形狀。
 
-<div class="w-50">
+<div class="w-1/2">
   <video controls="controls" autoplay="autoplay" loop>
       <source src="attachments/2022-03-19-06-41-00.mp4">
   </video>
@@ -108,43 +110,46 @@ revealOptions:
 ----
 
 ## Experimental results <!-- .element: class="mb-0" -->
-### - Comparison with Baselines <!-- .element: class="fs-1 text-start" -->
+### - Comparison with Baselines <!-- .element: class="!text-4xl text-left" -->
 
 ![](attachments/2022-03-19-05-56-22.png)
 
-- (1) 監督式的方法。 <!-- .element: class="fs-5 list-unstyled" -->
-- (2) a constant uniform depth map. <!-- .element: class="fs-5 list-unstyled" -->
-- (3) a constant depth map obtained by averaging all ground-truth depth maps in the test set.
-Proposed methods 比 (2), (3) 要好，同時接近監督式的效果。 <!-- .element: class="fs-5 list-unstyled" -->
+<ul class="text-lg px-8">
+  <li>(1) 監督式的方法。</li>
+  <li>(2) a constant uniform depth map. </li>
+  <li>(3) a constant depth map obtained by averaging all ground-truth depth maps in the test set.
+Proposed methods 比 (2), (3) 要好，同時接近監督式的效果。 </li>
+</ul>
+
 
 ----
 
 ## Experimental results <!-- .element: class="mb-0" -->
-### - Ablation Study <!-- .element: class="fs-1 text-start" -->
+### - Ablation Study <!-- .element: class="!text-4xl text-left" -->
 
 ![](attachments/2022-03-19-06-15-57.png)
 
-(2) 取消反照率的翻轉。 <!-- .element: class="fs-5 my-0" -->
+(2) 取消反照率的翻轉。 <!-- .element: class="text-lg my-0" -->
 
-(3) 取消深度圖的翻轉。 <!-- .element: class="fs-5 my-0" -->
+(3) 取消深度圖的翻轉。 <!-- .element: class="text-lg my-0" -->
 
-(4) 取消光照角度的計算。 <!-- .element: class="fs-5 my-0" -->
+(4) 取消光照角度的計算。 <!-- .element: class="text-lg my-0" -->
 
-- 一次移除一個部份，評估模型的結果。 <!-- .element: class="fs-4 mt-5" -->
+- 一次移除一個部份，評估模型的結果。 <!-- .element: class="text-lg mt-5" -->
 
 ----
 
 ## Experimental results <!-- .element: class="mb-0" -->
-### - Asymmetric Perturbation <!-- .element: class="fs-1 text-start" -->
+### - Asymmetric Perturbation <!-- .element: class="!text-4xl text-left" -->
 
 ![](attachments/2022-03-19-06-24-05.png)
 
-<div class="row">
-  <div class="col-6">
+<div class="grid grid-cols-3">
+  <div class="col-span-2">
     <img src="attachments/2022-03-19-06-24-19.png">
   </div>
-  <div class="col-6 fs-5">
-    <ul>
+  <div>
+    <ul class="text-lg">
       <li>為了驗證 confidence map 對非對稱影像的幫助，使用 patch 破壞影像的「對稱性」進行訓練，測試對模型結果的影響。</li>
       <li>有加入 confidence map 的不會受到擾動的影響，而沒有使用該方法的普通模型會遭到破壞。</li>
     </ul>
@@ -154,15 +159,15 @@ Proposed methods 比 (2), (3) 要好，同時接近監督式的效果。 <!-- .e
 ----
 
 ## Experimental results <!-- .element: class="mb-0" -->
-### - Qualitative Results <!-- .element: class="fs-1 text-start" -->
+### - Qualitative Results <!-- .element: class="!text-4xl text-left" -->
 
-<div class="row">
-  <div class="col-6">
+<div class="grid grid-cols-3">
+  <div class="col-span-2">
     <img src="attachments/2022-03-19-06-32-22.png">
   </div>
-  <div class="col-6 fs-5">
+  <div>
     <img src="attachments/2022-03-19-06-32-48.png">
-    <ul>
+    <ul class="text-lg">
       <li>即使極端的表情，也會保持鼻子、眼睛、嘴巴等精細細節。</li>
       <li>在泛化性上，臉部繪圖與卡通仍可以很好的推論，即使從未見過這樣的影像。</li>
     </ul>
@@ -172,26 +177,26 @@ Proposed methods 比 (2), (3) 要好，同時接近監督式的效果。 <!-- .e
 ----
 
 ## Experimental results <!-- .element: class="mb-0" -->
-### - Symmetry and Asymmetry Detection <!-- .element: class="fs-1 text-start" -->
+### - Symmetry and Asymmetry Detection <!-- .element: class="!text-4xl text-left" -->
 
 ![](attachments/2022-03-19-06-34-02.png)
 
-(a) 即使外觀不對稱，仍可以重建物件「真實」的對稱平面。 <!-- .element: class="fs-5 my-0" -->
+(a) 即使外觀不對稱，仍可以重建物件「真實」的對稱平面。 <!-- .element: class="text-lg my-0" -->
 
-(b) 使用 confidence map 檢測和可視化，紅色代表不對稱。 <!-- .element: class="fs-5 my-0" -->
+(b) 使用 confidence map 檢測和可視化，紅色代表不對稱。 <!-- .element: class="text-lg my-0" -->
 
 ----
 
 ## Experimental results <!-- .element: class="mb-0" -->
-### - Qualitative Comparison <!-- .element: class="fs-1 text-start" -->
+### - Qualitative Comparison <!-- .element: class="!text-4xl text-left" -->
 
-![](attachments/2022-03-19-06-36-35.png)
+![](attachments/2022-03-19-06-36-35.png) <!-- .element: class="w-4/6" -->
 
-[45] 很難產生 3D 形狀，並且形狀不自然。 <!-- .element: class="fs-5 my-0" -->
+[45] 很難產生 3D 形狀，並且形狀不自然。 <!-- .element: class="text-lg my-0" -->
 
-[52] 使用 GAN，從雜訊中產生高畫質 3D 人臉。 <!-- .element: class="fs-5 my-0" -->
+[52] 使用 GAN，從雜訊中產生高畫質 3D 人臉。 <!-- .element: class="text-lg my-0" -->
 
-- Proposed methods 品質比這兩種方法都高。 <!-- .element: class="fs-5 my-0" -->
+- Proposed methods 品質比這兩種方法都高。 <!-- .element: class="text-lg my-0" -->
 
 ---
 

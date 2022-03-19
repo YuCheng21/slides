@@ -11,5 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "reveal-md": "^5.1.0"
+  },
+  "devDependencies": {
+    "bootstrap": "^5.1.3"
   }
 }
