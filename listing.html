@@ -29,35 +29,74 @@
 </head>
 
 <body class="bg-primary bg-opacity-50">
-<div class="container">
-    <h1 class="d-flex justify-content-center py-5 fw-bold">YuCheng's Slides</h1>
-    <div class="card shadow rounded-3">
-        <div class="card-body">
-            <table class="table table-striped text-center align-middle" data-toggle="table" data-search="true"
-                   data-pagination="true" data-page-size="10" data-page-list="[ 10, 20, 30, 50, All]"
-                   data-sort-name="date" data-sort-order="desc">
-                <thead>
-                <tr>
-                    <th data-sortable="true" data-field="date">Date</th>
-                    <th>Event</th>
-                    <th>Title</th>
-                </tr>
-                </thead>
-                <tbody>
-                {{#files}}
-                <tr>
-                    <td>{{date}}</td>
-                    <td>{{event}}</td>
-                    <td>
-                        <a href="{{filePath}}" title="{{title}}" target="_blank">{{title}}</a>
-                    </td>
-                </tr>
-                {{/files}}
-                </tbody>
-            </table>
+<main class="container">
+    <nav class="navbar navbar-dark navbar-expand-xl bg-primary px-3 fixed-top shadow">
+        <div class="container-fluid">
+            <a href="/"class="navbar-brand fs-1 fw-bold py-0 ds-100 hv-scale hv-color-text">
+                <span>YuCheng's Slides</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
+                <ul class="navbar-nav fs-4 fw-bold ds-100">
+                    <li class="nav-item hv-scale">
+                        <a href="https://yucheng.me" class="nav-link text-white hv-color-text">
+                            <span class="iconify-inline" data-icon="fa-solid:home"></span>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item hv-scale">
+                        <a href="https://me.yucheng.me" class="nav-link text-white hv-color-text">
+                            <span class="iconify-inline" data-icon="bxs:user-circle"></span>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li class="nav-item hv-scale">
+                        <a href="https://blog.yucheng.me" class="nav-link text-white hv-color-text">
+                            <span class="iconify-inline" data-icon="cib:blogger-b"></span>
+                            <span>Blog</span>
+                        </a>
+                    </li>
+                    <li class="nav-item hv-scale">
+                        <a href="https://no.yucheng.me" class="nav-link text-white hv-color-text">
+                            <span class="iconify-inline" data-icon="zondicons:network"></span>
+                            <span>Wiki</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="py-4">
+        <div class="card rounded-3 hv-shadow">
+            <div class="card-body">
+                <table class="table table-striped text-center align-middle" data-toggle="table" data-search="true"
+                       data-pagination="true" data-page-size="10" data-page-list="[ 10, 20, 30, 50, All]"
+                       data-sort-name="date" data-sort-order="desc">
+                    <thead>
+                    <tr>
+                        <th data-sortable="true" data-field="date">Date</th>
+                        <th>Event</th>
+                        <th>Title</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {{#files}}
+                    <tr>
+                        <td>{{date}}</td>
+                        <td>{{event}}</td>
+                        <td>
+                            <a href="{{filePath}}" title="{{title}}" target="_blank">{{title}}</a>
+                        </td>
+                    </tr>
+                    {{/files}}
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
-</div>
+</main>
 </body>
 
 </html>

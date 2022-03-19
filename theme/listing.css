@@ -11118,8 +11118,76 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.ds-100 {
+  filter: drop-shadow(0px 0px 1px black);
+}
+
+.ds-500 {
+  filter: drop-shadow(0px 0px 5px black);
+}
+
+.ds-900 {
+  filter: drop-shadow(0px 0px 9px black);
+}
+
+.hv-shadow {
+  box-shadow: 0 3px 8px 6px rgba(17, 17, 17, 0.06);
+}
+.hv-shadow:hover {
+  box-shadow: 0 3px 8px 6px rgba(17, 17, 17, 0.15);
+}
+
+.hv-scale {
+  transform: scale(1);
+  transition: 0.3s ease;
+}
+.hv-scale:hover {
+  transform: scale(1.02);
+}
+
+.hv-color-bg:hover {
+  background-color: #7eca8f !important;
+}
+
+.hv-color-text:hover {
+  color: #7eca8f !important;
+}
+
+.ws-nowrap {
+  white-space: nowrap !important;
+}
+
+.ws-normal {
+  white-space: normal !important;
+}
+
 body {
   font-family: "Nunito", "Noto Sans TC", sans-serif;
+}
+
+main {
+  padding-top: 76px;
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8e9eb9;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #7eca8f;
 }
 
 /*# sourceMappingURL=listing.css.map */
