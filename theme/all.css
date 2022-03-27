@@ -353,12 +353,13 @@
 
 .reveal ul {
   display: block;
-  margin-left: 0px;
+  padding-left: 40px;
+  margin-left: 0;
 }
 
 .reveal ol {
   display: block;
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 /*# sourceMappingURL=all.css.map */
