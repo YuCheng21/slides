@@ -82,8 +82,8 @@
                     <thead>
                     <tr>
                         <th data-sortable="true" data-field="date">Date</th>
-                        <th>Event</th>
-                        <th>Title</th>
+                        <th data-sortable="true">Event</th>
+                        <th data-halign="center" data-align="left">Title</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -92,7 +92,8 @@
                         <td>{{date}}</td>
                         <td>{{event}}</td>
                         <td>
-                            <a href="{{filePath}}" title="{{title}}" target="_blank">{{title}}</a>
+                            <a href="{{filePath}}" title="{{title}}" target="_blank" rel="noopener noreferrer">{{title}}</a>
+                            <span>(<a href="{{filePath}}?print-pdf" target="_blank" rel="noopener noreferrer">PDF</a>)</span>
                         </td>
                     </tr>
                     {{/files}}

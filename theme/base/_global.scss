@@ -1,5 +1,12 @@
-.reveal h2 {
+.reveal h1 {
+  padding: 50px 0;
+  margin-bottom: 50px;
   text-align: start;
+  border-bottom: 2px solid $primary;
+}
+.reveal h2, {
+  text-align: start;
+  border-bottom: 2px solid $primary;
 }
 .reveal p {
   text-align: start;

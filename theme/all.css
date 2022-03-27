@@ -2,52 +2,52 @@
  * GLOBAL STYLES
  *********************************************/
 :root {
-  --background-color: #3b3b3b;
+  --background-color: #B4BDC7;
   --main-font: Lato, sans-serif;
   --main-font-size: 40px;
-  --main-color: #eee;
+  --main-color: #134358;
   --block-margin: 20px;
   --heading-margin: 0 0 20px 0;
   --heading-font: Nunito, Noto Sans TC, sans-serif;
-  --heading-color: #eee;
+  --heading-color: #134358;
   --heading-line-height: 1.2;
   --heading-letter-spacing: normal;
   --heading-text-transform: normal;
   --heading-text-shadow: none;
   --heading-font-weight: normal;
   --heading1-text-shadow: none;
-  --heading1-size: 2em;
-  --heading2-size: 1.75em;
-  --heading3-size: 1.5em;
+  --heading1-size: 1.5em;
+  --heading2-size: 1.4em;
+  --heading3-size: 1.3em;
   --heading4-size: 1em;
   --code-font: monospace;
-  --link-color: #2196F3;
-  --link-color-hover: #82c4f8;
-  --selection-background-color: #FF9800;
-  --selection-color: #fff;
+  --link-color: #425D8A;
+  --link-color-hover: #7590bd;
+  --selection-background-color: #425D8A;
+  --selection-color: #B4BDC7;
 }
 
 .reveal-viewport {
-  background: #3b3b3b;
-  background-color: #3b3b3b;
+  background: #B4BDC7;
+  background-color: #B4BDC7;
 }
 
 .reveal {
   font-family: "Lato", sans-serif;
   font-size: 40px;
   font-weight: normal;
-  color: #eee;
+  color: #134358;
 }
 
 .reveal ::selection {
-  color: #fff;
-  background: #FF9800;
+  color: #B4BDC7;
+  background: #425D8A;
   text-shadow: none;
 }
 
 .reveal ::-moz-selection {
-  color: #fff;
-  background: #FF9800;
+  color: #B4BDC7;
+  background: #425D8A;
   text-shadow: none;
 }
 
@@ -67,7 +67,7 @@
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #eee;
+  color: #134358;
   font-family: "Nunito", "Noto Sans TC", sans-serif;
   font-weight: normal;
   line-height: 1.2;
@@ -78,15 +78,15 @@
 }
 
 .reveal h1 {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .reveal h2 {
-  font-size: 1.75em;
+  font-size: 1.4em;
 }
 
 .reveal h3 {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 .reveal h4 {
@@ -279,27 +279,27 @@
  * LINKS
  *********************************************/
 .reveal a {
-  color: #2196F3;
+  color: #425D8A;
   text-decoration: none;
   transition: color 0.15s ease;
 }
 
 .reveal a:hover {
-  color: #82c4f8;
+  color: #7590bd;
   text-shadow: none;
   border: none;
 }
 
 .reveal .roll span:after {
   color: #fff;
-  background: #0a6ebd;
+  background: #293a56;
 }
 
 /*********************************************
  * Frame helper
  *********************************************/
 .reveal .r-frame {
-  border: 4px solid #eee;
+  border: 4px solid #134358;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -308,7 +308,7 @@
 }
 
 .reveal a:hover .r-frame {
-  border-color: #2196F3;
+  border-color: #425D8A;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
 }
 
@@ -316,7 +316,7 @@
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls {
-  color: #2196F3;
+  color: #425D8A;
 }
 
 /*********************************************
@@ -324,7 +324,7 @@
  *********************************************/
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
-  color: #2196F3;
+  color: #425D8A;
 }
 
 /*********************************************
@@ -332,11 +332,19 @@
  *********************************************/
 @media print {
   .backgrounds {
-    background-color: #3b3b3b;
+    background-color: #B4BDC7;
   }
 }
+.reveal h1 {
+  padding: 50px 0;
+  margin-bottom: 50px;
+  text-align: start;
+  border-bottom: 2px solid #425D8A;
+}
+
 .reveal h2 {
   text-align: start;
+  border-bottom: 2px solid #425D8A;
 }
 
 .reveal p {

@@ -1,13 +1,22 @@
 // Base settings for all themes that can optionally be
 // overridden by the super-theme
 
+$primary:       #425D8A !default;
+$secondary:     #55A3B0 !default;
+$success:       #28A745 !default;
+$info:          #A78D6C !default;
+$warning:       #FFC107 !default;
+$danger:        #DC3545 !default;
+$light:         #B4BDC7 !default;
+$dark:          #134358 !default;
+
 // Background of the presentation
-$backgroundColor: #3b3b3b;
+$backgroundColor: $light;
 
 // Primary/body text
 $mainFont: 'Lato', sans-serif;
 $mainFontSize: 40px;
-$mainColor: #eee;
+$mainColor: $dark;
 
 // Vertical spacing between blocks of text
 $blockMargin: 20px;
@@ -15,7 +24,7 @@ $blockMargin: 20px;
 // Headings
 $headingMargin: 0 0 $blockMargin 0;
 $headingFont: "Nunito", "Noto Sans TC", sans-serif;;
-$headingColor: #eee;
+$headingColor: $dark;
 $headingLineHeight: 1.2;
 $headingLetterSpacing: normal;
 $headingTextTransform: normal;
@@ -23,23 +32,24 @@ $headingTextShadow: none;
 $headingFontWeight: normal;
 $heading1TextShadow: $headingTextShadow;
 
-$heading1Size: 2.00em;
-$heading2Size: 1.75em;
-$heading3Size: 1.5em;
+$heading1Size: 1.5em;
+$heading2Size: 1.4em;
+$heading3Size: 1.3em;
 $heading4Size: 1.00em;
 
 $codeFont: monospace;
 
 // Links and actions
-$linkColor: #2196F3;
+$linkColor: $primary;
 $linkColorHover: lighten( $linkColor, 20% );
 
 // Text selection
-$selectionBackgroundColor: #FF9800;
-$selectionColor: #fff;
+$selectionBackgroundColor: $primary;
+$selectionColor: $light;
 
 // Generates the presentation background, can be overridden
 // to return a background image or gradient
 @mixin bodyBackground() {
 	background: $backgroundColor;
 }
+
