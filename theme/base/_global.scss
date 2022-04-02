@@ -1,13 +1,23 @@
 .reveal h1 {
-  padding: 50px 0;
+  padding: 100px 0;
   margin-bottom: 50px;
   text-align: start;
   border-bottom: 2px solid $primary;
+  font-weight: bold;
 }
 .reveal h2, {
+  font-weight: bold;
+  padding: 20px 0 15px;
   text-align: start;
   border-bottom: 2px solid $primary;
 }
+
+.reveal h3{
+  text-align: start;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 .reveal p {
   text-align: start;
 }
@@ -15,8 +25,15 @@
   display: block;
   padding-left: 40px;
   margin-left: 0;
+  line-height: 1.5;
 }
+
 .reveal ol {
   display: block;
   margin-left: 0;
+  line-height: 1.5;
+}
+
+li{
+  margin-bottom: 1rem;
 }

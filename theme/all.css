@@ -4,7 +4,7 @@
 :root {
   --background-color: #B4BDC7;
   --main-font: Lato, sans-serif;
-  --main-font-size: 40px;
+  --main-font-size: 28px;
   --main-color: #134358;
   --block-margin: 20px;
   --heading-margin: 0 0 20px 0;
@@ -16,9 +16,9 @@
   --heading-text-shadow: none;
   --heading-font-weight: normal;
   --heading1-text-shadow: none;
-  --heading1-size: 1.5em;
-  --heading2-size: 1.4em;
-  --heading3-size: 1.3em;
+  --heading1-size: 1.2em;
+  --heading2-size: 1.2em;
+  --heading3-size: 1em;
   --heading4-size: 1em;
   --code-font: monospace;
   --link-color: #425D8A;
@@ -34,7 +34,7 @@
 
 .reveal {
   font-family: "Lato", sans-serif;
-  font-size: 40px;
+  font-size: 28px;
   font-weight: normal;
   color: #134358;
 }
@@ -78,15 +78,15 @@
 }
 
 .reveal h1 {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .reveal h2 {
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 .reveal h3 {
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 .reveal h4 {
@@ -161,7 +161,6 @@
 .reveal ol ol,
 .reveal ol ul {
   display: block;
-  margin-left: 40px;
 }
 
 .reveal dt {
@@ -336,15 +335,24 @@
   }
 }
 .reveal h1 {
-  padding: 50px 0;
+  padding: 100px 0;
   margin-bottom: 50px;
+  text-align: start;
+  border-bottom: 2px solid #425D8A;
+  font-weight: bold;
+}
+
+.reveal h2 {
+  font-weight: bold;
+  padding: 20px 0 15px;
   text-align: start;
   border-bottom: 2px solid #425D8A;
 }
 
-.reveal h2 {
+.reveal h3 {
   text-align: start;
-  border-bottom: 2px solid #425D8A;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .reveal p {
@@ -355,11 +363,17 @@
   display: block;
   padding-left: 40px;
   margin-left: 0;
+  line-height: 1.5;
 }
 
 .reveal ol {
   display: block;
   margin-left: 0;
+  line-height: 1.5;
+}
+
+li {
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=all.css.map */
