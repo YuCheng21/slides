@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <title>YuCheng's Slides</title>
+    <link rel="stylesheet" href="assets/theme/listing.css"/>
+    <!-- RWD -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- JQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js"
+            integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+            integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+            crossorigin="anonymous"></script>
+    <!-- Bootstrap Table -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.css">
+    <script src="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.js"></script>
+    <!-- <script src="https://unpkg.com/bootstrap-table@1.19.1/dist/locale/bootstrap-table-zh-TW.min.js"></script> -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- Iconify -->
+    <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
+</head>
+
+<body class="bg-primary bg-opacity-50">
+<nav class="navbar navbar-dark navbar-expand-xl bg-primary px-3 fixed-top shadow">
+    <div class="container-fluid">
+        <a href="/"class="navbar-brand fs-1 fw-bold py-0 ds-100 hv-scale hv-color-text">
+            <span>YuCheng's Slides</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
+            <ul class="navbar-nav fs-4 fw-bold ds-100">
+                <li class="nav-item hv-scale">
+                    <a href="https://yucheng.me" class="nav-link text-white hv-color-text">
+                        <span class="iconify-inline" data-icon="fa-solid:home"></span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="nav-item hv-scale">
+                    <a href="https://cv.yucheng.me" class="nav-link text-white hv-color-text">
+                        <span class="iconify-inline" data-icon="bxs:user-circle"></span>
+                        <span>About</span>
+                    </a>
+                </li>
+                <li class="nav-item hv-scale">
+                    <a href="https://blog.yucheng.me" class="nav-link text-white hv-color-text">
+                        <span class="iconify-inline" data-icon="cib:blogger-b"></span>
+                        <span>Blog</span>
+                    </a>
+                </li>
+                <li class="nav-item hv-scale">
+                    <a href="https://no.yucheng.me" class="nav-link text-white hv-color-text">
+                        <span class="iconify-inline" data-icon="zondicons:network"></span>
+                        <span>Wiki</span>
+                    </a>
+                </li>
+                <li class="nav-item hv-scale">
+                    <a href="https://slides.yucheng.me" class="nav-link text-white hv-color-text text-active">
+                        <span class="iconify-inline" data-icon="heroicons-solid:presentation-chart-bar"></span>
+                        <span>Slides</span>
+                    </a>
+            </ul>
+        </div>
+    </div>
+</nav>
+<main class="container min-vh-100 d-flex align-items-center justify-content-center">
+    <div class="py-4">
+        <div class="card rounded-3 hv-shadow">
+            <div class="card-body">
+                <table class="table table-striped text-center align-middle" data-toggle="table" data-search="true"
+                       data-pagination="true" data-page-size="10" data-page-list="[ 10, 20, 30, 50, All]"
+                       data-sort-name="date" data-sort-order="desc">
+                    <thead>
+                    <tr>
+                        <th data-sortable="true" data-field="date">Date</th>
+                        <th data-sortable="true">Event</th>
+                        <th data-halign="center" data-align="left">Title</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>2021&#x2F;05&#x2F;18</td>
+                        <td>Course Presentation</td>
+                        <td>
+                            <a href="2021-05-18.html" title="Blindly Assess Image Quality in the Wild Guided by A Self-Adaptive Hyper Network" target="_blank" rel="noopener noreferrer">Blindly Assess Image Quality in the Wild Guided by A Self-Adaptive Hyper Network</a>
+                            <span>(<a href="2021-05-18.html?print-pdf" target="_blank" rel="noopener noreferrer">PDF</a>)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2021&#x2F;06&#x2F;04</td>
+                        <td>Course Presentation</td>
+                        <td>
+                            <a href="2021-06-04.html" title="Fully Deep Blind Image Quality Predictor" target="_blank" rel="noopener noreferrer">Fully Deep Blind Image Quality Predictor</a>
+                            <span>(<a href="2021-06-04.html?print-pdf" target="_blank" rel="noopener noreferrer">PDF</a>)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2021&#x2F;06&#x2F;14</td>
+                        <td>Meeting</td>
+                        <td>
+                            <a href="2021-06-14.html" title="Bitcoin: A Peer-to-Peer Electronic Cash System" target="_blank" rel="noopener noreferrer">Bitcoin: A Peer-to-Peer Electronic Cash System</a>
+                            <span>(<a href="2021-06-14.html?print-pdf" target="_blank" rel="noopener noreferrer">PDF</a>)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2021&#x2F;08&#x2F;31</td>
+                        <td>Meeting</td>
+                        <td>
+                            <a href="2021-08-30.html" title="An Image Quality Predictor based on Convolution Neural Networks" target="_blank" rel="noopener noreferrer">An Image Quality Predictor based on Convolution Neural Networks</a>
+                            <span>(<a href="2021-08-30.html?print-pdf" target="_blank" rel="noopener noreferrer">PDF</a>)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2021&#x2F;10&#x2F;18</td>
+                        <td>Meeting</td>
+                        <td>
+                            <a href="2021-10-18.html" title="A blockchain-based code copyright management system" target="_blank" rel="noopener noreferrer">A blockchain-based code copyright management system</a>
+                            <span>(<a href="2021-10-18.html?print-pdf" target="_blank" rel="noopener noreferrer">PDF</a>)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2021&#x2F;11&#x2F;08</td>
+                        <td>Meeting</td>
+                        <td>
+                            <a href="2021-11-08.html" title="Toward Intelligent Cyber-Physical Systems: Digital Twin Meets Artificial Intelligence" target="_blank" rel="noopener noreferrer">Toward Intelligent Cyber-Physical Systems: Digital Twin Meets Artificial Intelligence</a>
+                            <span>(<a href="2021-11-08.html?print-pdf" target="_blank" rel="noopener noreferrer">PDF</a>)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2021&#x2F;11&#x2F;15</td>
+                        <td>Meeting</td>
+                        <td>
+                            <a href="2021-11-15.html" title="oneVFC - A Vehicular Fog Computation Platform for Artificial Intelligence in Internet of Vehicles" target="_blank" rel="noopener noreferrer">oneVFC - A Vehicular Fog Computation Platform for Artificial Intelligence in Internet of Vehicles</a>
+                            <span>(<a href="2021-11-15.html?print-pdf" target="_blank" rel="noopener noreferrer">PDF</a>)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2021&#x2F;11&#x2F;23</td>
+                        <td>Meeting</td>
+                        <td>
+                            <a href="2021-11-23.html" title="Communication-Efficient Federated Learning and Permissioned Blockchain for Digital Twin Edge Networks" target="_blank" rel="noopener noreferrer">Communication-Efficient Federated Learning and Permissioned Blockchain for Digital Twin Edge Networks</a>
+                            <span>(<a href="2021-11-23.html?print-pdf" target="_blank" rel="noopener noreferrer">PDF</a>)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2022&#x2F;01&#x2F;08</td>
+                        <td>Course Presentation</td>
+                        <td>
+                            <a href="2022-01-08.html" title="Grasshopper Optimisation Algorithm: Theory and application" target="_blank" rel="noopener noreferrer">Grasshopper Optimisation Algorithm: Theory and application</a>
+                            <span>(<a href="2022-01-08.html?print-pdf" target="_blank" rel="noopener noreferrer">PDF</a>)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2022&#x2F;03&#x2F;14</td>
+                        <td>Meeting</td>
+                        <td>
+                            <a href="2022-03-14.html" title="Unsupervised Learning of Probably Symmetric Deformable 3D Objects" target="_blank" rel="noopener noreferrer">Unsupervised Learning of Probably Symmetric Deformable 3D Objects</a>
+                            <span>(<a href="2022-03-14.html?print-pdf" target="_blank" rel="noopener noreferrer">PDF</a>)</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+
+</html>
